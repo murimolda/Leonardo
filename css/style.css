@@ -1,0 +1,591 @@
+/* FONTS */
+@font-face {
+    font-family: 'Christmas ScriptC';
+    src: local('Christmas ScriptC'), local('ChristmasScriptC'), url('../fonts/christmasscript/christmasscriptc.woff2') format('woff2'), url('../fonts/christmasscript/christmasscriptc.woff') format('woff'), url('../fonts/christmasscript/christmasscriptc.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora'), local('Lora-Regular'), url('../fonts/lora/Lora.woff2') format('woff2'), url('../fonts/lora/Lora.woff') format('woff'), url('../fonts/lora/Lora.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora Italic'), local('Lora-Italic'), url('../fonts/lora/Loraitalic.woff2') format('woff2'), url('../fonts/lora/Loraitalic.woff') format('woff'), url('../fonts/lora/Loraitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url('../fonts/lora/Lorabolditalic.woff2') format('woff2'), url('../fonts/lora/Lorabolditalic.woff') format('woff'), url('../fonts/lora/Lorabolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora Bold'), local('Lora-Bold'), url('../fonts/lora/Lorabold.woff2') format('woff2'), url('../fonts/lora/Lorabold.woff') format('woff'), url('../fonts/lora/orabold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif'), local('PTSerif-Regular'), url('../fonts/ptserif/ptserif.woff2') format('woff2'), url('../fonts/ptserif/ptserif.woff') format('woff'), url('../fonts/ptserif/ptserif.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif Italic'), local('PTSerif-Italic'), url('../fonts/ptserif/ptserifitalic.woff2') format('woff2'), url('../fonts/ptserif/ptserifitalic.woff') format('woff'), url('../fonts/ptserif/ptserifitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif Bold'), local('PTSerif-Bold'), url('../fonts/ptserif/ptserifbold.woff2') format('woff2'), url('../fonts/ptserif/ptserifbold.woff') format('woff'), url('../fonts/ptserif/ptserifbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url('../fonts/ptserif/ptserifbolditalic.woff2') format('woff2'), url('../fonts/ptserif/ptserifbolditalic.woff') format('woff'), url('../fonts/ptserif/ptserifbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+body{
+  	color: #000;
+	font-size: 20px;
+    font-family: "Lora";
+	font-weight: normal;
+	background-color: #fff;
+	width: 100%;
+	margin: 0 auto;
+    line-height: 1.2;
+}
+
+header, main, footer{
+    padding: 0 10%;
+}
+/* HEADER */
+header{
+    padding-top: 25px;
+    background: url('../img/header-bg.png') no-repeat;
+     position: relative;
+}
+.logo-line{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    margin-bottom: 125px;
+}
+.logo{
+    width: 50%;
+    font-size: 32px;
+    font-family: "Christmas ScriptC";
+}
+.send-pigeon{
+    width: 50%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 100%;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    -ms-align-items: center;
+    align-items: center;
+}
+.send-pigeon a{
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.send-pigeon a img{
+    height: 28px;
+}
+.site-cover-line{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    padding-bottom: 110px;
+}
+.header-slogan{
+    width: 50%;
+    font-size: 34px;
+}
+.header-slogan button{
+    width: 227px;
+    height: 46px;
+    font-size: 24px;
+    border: none;
+    background-color: #fff;
+    margin-top: 25px;
+}
+.header-slogan button:hover{
+    outline: none;
+}
+.header-slogan button:active {
+    outline: none;
+}
+.header-slogan button:focus{
+    outline: none;
+}
+.header-img{
+    width: 50%;
+}
+.header-img img{
+    width: 100%;
+}
+.header-gap{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.header-gap img{
+    width: 60px;
+}
+
+
+
+main{
+    padding-top: 110px;
+}
+
+/*General information about the manufacturer*/
+.info-about-seller{
+    padding: 0 100px 85px;
+    position: relative;
+}
+.info-about-seller h3{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Christmas ScriptC";
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+.info-about-seller p{
+    font-family: "PT Serif";
+    padding-bottom: 30px;
+}
+.info-about-seller a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+.info-about-seller p:first-of-type::first-letter{
+    font-size: 40px;
+    font-family: "Christmas ScriptC";
+}
+.block-gap{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.block-gap img{
+    width: 100%;
+}
+
+/*Product catalog*/
+.catalog{
+    padding: 135px 0;
+    position: relative;
+}
+.product-line{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    padding-bottom: 110px;
+}
+.product-foto{
+    width: 55%;
+    padding: 0 50px;
+}
+.product-foto img{
+    width: 100%;
+}
+.product-info{
+    width: 45%;
+}
+.product-info h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.product-info p{
+    text-align: left;
+    padding-bottom: 35px;
+}
+.product-info button{
+    font-size: 22px;
+    font-family: "PT Serif";
+    border: none;
+    background-color: #dddddd;
+    width: 230px;
+    height: 44px;
+    margin: 35px 0;
+}
+.product-info button:hover{
+    outline: none;
+}
+.product-info button:active {
+    outline: none;
+}
+.product-info button:focus{
+    outline: none;
+}
+.product-feature{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.product-feature p, img{
+   padding: 0 10px;
+}
+.product-feature p{
+    font-family: "PT Serif";
+    font-weight: bold;
+}
+.product-feature p:nth-of-type(even){
+    font-size: 35px;
+}
+.product-feature img{
+    width: 60px;
+    height: 60px;
+}
+
+/*Product Advantages*/
+.advantages-block{
+    padding: 135px 0;
+    position: relative;
+}
+.advantages-block h3{
+  font-size: 36px;
+  font-family: "PTSerif";
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.advantages-block-line{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+}
+.advantages-block-item{
+    display: inline-block;
+}
+.advantages-block-item img{
+    min-height: 100px;
+    padding: 10px;
+}
+
+/*Customer Reviews*/
+.testimonials-block{
+    padding: 135px 100px;
+    position: relative;
+}
+.testimonials-block h3{
+  font-size: 36px;
+  font-family: "PTSerif";
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.testimonials-block-line{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.testimonials-block-item{
+    display: inline-block;
+    position: relative;
+}
+.item-avatar{
+    width: 220px
+}
+.avatar{
+    padding-right: 40px;
+}
+.testimonials-block-item p{
+    padding: 20px 40px;
+}
+.testimonials-block-item h4{
+    position: relative;
+    text-align: right;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "PTSerif";
+}
+.testimonials-block-item h4 span{
+    position: absolute;
+    top: 0;
+    width: 125px;
+    height: 2px;
+    background-color: rgb(221, 221, 221);
+}
+.quote{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.center{
+    justify-content: center;
+}
+
+footer{
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    background: url(../img/footer-bg.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+footer h3{
+  font-size: 36px;
+  font-family: "PTSerif";
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.footer-gap{
+    position: absolute;
+    width: 100vw;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 44%);
+}
+.footer-gap img{
+    width: 100%;
+}
+
+/*Form for contacting the manufacturer*/
+.form-line{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+.form-line input{
+    border: 1px rgb(221, 221, 221) solid;
+    background-color: rgb(255, 255, 255);
+    width: 358px;
+    height: 49px;
+    margin: 0 30px 50px 0;
+    padding-left: 15px;
+}
+.form-line input:hover{
+    outline: 1px rgb(221, 221, 221) solid;
+}
+.form-line input:active{
+    outline: 1px rgb(221, 221, 221) solid;
+}
+.form-line input:focus{
+    outline: 1px rgb(221, 221, 221) solid;
+}
+.form-line input::-webkit-input-placeholder{
+    font-size: 18px;
+    font-family: "PTSerif";
+    color: rgb(195, 195, 195);
+    line-height: 1.2;
+    text-align: left;
+}
+.form-line input::-moz-placeholder{
+    font-size: 18px;
+    font-family: "PTSerif";
+    color: rgb(195, 195, 195);
+    line-height: 1.2;
+    text-align: left;
+}
+.form-line input::-ms-input-placeholder{
+    font-size: 18px;
+    font-family: "PTSerif";
+    color: rgb(195, 195, 195);
+    line-height: 1.2;
+    text-align: left;
+}
+.textarea input{
+    width: 748px;
+    height: 134px;
+}
+.form-line button{
+    border: 1px rgb(214, 214, 214) solid;
+    background-color: rgb(221, 221, 221);
+    width: 230px;
+    height: 44px;
+    font-size: 22px;
+    font-family: "PTSerif";
+    line-height: 1.2;
+}
+.form-line button:hover{
+    outline: 1px rgb(214, 214, 214) solid;
+}
+.form-line button:active {
+    outline: 1px rgb(214, 214, 214) solid;
+}
+.form-line button:focus{
+    outline: 1px rgb(214, 214, 214) solid;
+}
+
+/*Media queries for different screen widths*/
+@media (max-width: 1000px){
+    .site-cover-line{
+        flex-direction: column;
+    }
+    .header-slogan{
+        width: 100%;
+        text-align: center;
+    }
+    .header-img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .info-about-seller{
+        padding: 0 0 85px;
+    }
+    .catalog{
+        padding-bottom: 0;
+    }
+    .product-line{
+        flex-direction: column;
+    }
+    .product-line-even{
+        flex-direction: column-reverse;
+    }
+    .product-foto{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .product-info{
+        width: 100%;
+    }
+    .advantages-block{
+        padding: 70px 0;
+    }    
+    .testimonials-block{
+        padding: 70px 0;
+    }
+    .line-column{
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }  
+    .testimonials-block-line.line-column{
+        padding-bottom: 50px;
+    }  
+}
+
+@media (max-width: 700px){
+    .avatar{
+        padding-bottom: 30px;
+    }
+    .advantages-block-line{
+        flex-flow: column wrap;
+    }
+    .advantages-block-item{
+        text-align: center;
+        padding: 20px;
+    } 
+}
+
+@media (max-width: 550px){
+    header, main, footer {
+        padding: 50px;
+    }
+    .product-feature{
+      flex-wrap: wrap;
+      margin-bottom: 55px; 
+    }
+    .product-feature img{
+        display: none;
+    }
+    .product-feature p{
+        display: inline-block;
+        width: 50%;
+        padding: 10px 0;
+    }
+    .testimonials-block-item h4 span {
+        width: 105px;
+    }
+    .form-line{
+      flex-wrap: wrap;
+    }
+    .form-line input{
+        margin: 0 0 50px 0;
+        width: 748px;
+    }
+}
+
+@media (max-width: 400px){
+    .logo-line{
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .logo, .send-pigeon{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
